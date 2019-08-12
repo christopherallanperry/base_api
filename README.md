@@ -10,7 +10,7 @@ The following need to be installed on your device to permit the running this rep
 - [Nodemon](https://nodemon.io/)
 
 ## Initial Setup
-From the command line, run the following steps
+From the command line (CLI), run the following steps
 
 1. `$ npm i` or `$ npm install`
 
