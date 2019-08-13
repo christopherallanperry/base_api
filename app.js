@@ -25,7 +25,8 @@ app.use('/api', expressJWT({ secret: config.secret})
   }));
 
 function jwtErrorHandler(err, req, res,next) {
-  if(err.name !== 'Unauthorised request.') return next();
+  console.log(err.name);
+  if(err.name !== 'UnauthorizedError') return next();
   return res.status(401).json({ message: 'Unauthorised request.'});
 }
 
