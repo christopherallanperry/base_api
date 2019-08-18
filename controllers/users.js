@@ -1,10 +1,3 @@
-module.exports = {
-  index: usersIndex,
-  show: usersShow,
-  update: usersUpdate,
-  delete: usersDelete
-};
-
 const User = require('../models/user');
 
 function usersIndex(req, res) {
@@ -37,3 +30,10 @@ function usersDelete(req, res) {
     return res.status(204).send();
   });
 }
+
+module.exports = {
+  index: usersIndex,
+  show: usersShow,
+  update: usersUpdate,
+  delete: usersDelete
+};
